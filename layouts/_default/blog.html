@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $pages := .Pages.ByDate.Reverse }}
+{{ $filteredPages := slice }}
+{{ range $pages }}
+    {{ if and .IsPage (not .Params.hidden) }}
+        {{ $filteredPages = $filteredPages | append . }}
+    {{ end }}
+{{ end }}
+{{ $paginator := .Paginate $filteredPages }}
+<main>
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ range $paginator.Pages }}
+                <section id="{{ .Params.id }}" class="blog-section">
+                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    {{ if .Params.tags }}
+                    <div class="tags">
+                        {{ range .Params.tags }}
+                        <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    <p>{{ .Params.description }}</p>
+                    {{ if and .Params.images }}
+                        {{ $page := . }}
+                        <div class="image-viewer">
+                        {{ range .Params.images }}
+                            <!-- <a href="{{ $page.RelPermalink }}"> -->
+                            <a href={{ $page.RelPermalink }}><img src="/img/blog/{{ . }}" alt="{{ $page.Title }}" class="blog-post-image" /></a>
+                            <!-- </a> -->
+                        {{ end }}
+                        </div>
+                    {{ end }}
+                </section>
+        {{ end }}
+        {{ template "_internal/pagination.html" . }}
+    </div>
+</main>
+{{ end }}

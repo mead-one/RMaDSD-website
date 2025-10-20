@@ -1,0 +1,54 @@
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <img type="text/svg" src="/logo.svg" alt="Chris Mead" height="50" width="50">
+                <div class="logo-text">
+                    <h1>Chris Mead</h1>
+                    <p>Robotic Modelling and Drone Skin Design</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <nav>
+                    <ul>
+                        {{ range .Site.Pages.ByWeight }}
+                            {{ if or (eq .Kind "home") (eq .Kind "section") (and (eq .Kind "page") (eq .Parent.Kind "home")) }}
+                            {{ if .IsSection }}
+                            <li class="dropdown">
+                                <span class="dropdown-toggle"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+                                <div class="dropdown-menu">
+                                    {{ range first 5 .Pages.ByDate.Reverse }}
+                                        {{ if and (.IsPage) (not .Params.hidden) }}
+                                        <a href="{{ .RelPermalink }}">
+                                            {{ .Title }}
+                                            {{ if .Params.brief }}
+                                                <span class="dropdown-item-description">{{ .Params.brief }}</span>
+                                            {{ end }}
+                                        </a>
+                                        {{ end }}
+                                    {{ end }}
+                                    {{ if gt (len .Pages) 5 }}
+                                        <a href="{{ .RelPermalink }}">
+                                            <span class="dropdown-item-description">More...</span>
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </li>
+                            {{ else }}
+                            {{ if and (not .Draft) (not .Params.hidden) }}
+                            <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                            {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                </nav>
+                <button class="theme-toggle" id="themeToggle">
+                    <span id="themeIcon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>

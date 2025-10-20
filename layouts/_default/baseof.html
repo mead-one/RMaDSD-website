@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ "favicon.ico" | resources.Get | fingerprint }}" type="image/x-icon">
+    {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <title>{{ .Title }} | ChrisMead.co.uk</title>
+    <link rel="alternate" type="application/rss+xml" href="/projects/index.xml" title="Projects RSS Feed">
+    <link rel="alternate" type="application/rss+xml" href="/blog/index.xml" title="Blog RSS Feed">
+</head>
+<body>
+    {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+</body>
+</html>
+
