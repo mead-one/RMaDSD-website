@@ -9,7 +9,7 @@ date: 2025-12-02
 tags: [ "group work", "sci-fi", "alien" ]
 ---
 
-# Group Formation
+## Group Formation
 A group of people was formed from the cohort of students studying the _Robotic
 Modelling and Drone Skin Design_ module as part of the _AI &amp; Robotics_
 Bachelor's degree, for the purpose of designing, manufacturing and assembling
@@ -30,7 +30,7 @@ ability to create both 2D and 3D designs using CAD software, skill in woodworkin
 and extensive experience with relevant electronic components such as servo motors
 and the allowances, required to house and connect them.
 
-# Brainstorming Project Ideas
+## Brainstorming Project Ideas
 After exploring the available resources and playing with some ideas, the group
 unanimously decided to persue the creation of an alien-like head, inspired by
 H.R. Giger's "Xenomorph" design for the 1979 film "Alien". A servo motor would
