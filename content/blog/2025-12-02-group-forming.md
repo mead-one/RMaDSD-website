@@ -39,3 +39,33 @@ featuring an inner-jaw out of the mouth that would "salivate" hand soap or hand
 sanitiser. In the following weeks, the group attended a series of workshops, in
 which the aforementioned technologies were demonstrated, explored and
 experimented with.
+
+<figure>
+
+```mermaid
+gantt
+    section Group Project
+    Project Group Assigned                  :done,  groupassigned, 2025-10-14, 1d
+    Group Project Assignment                :active, groupproject, 2025-12-02, 2026-05-05
+    Workshops                               :done, Workshops, 2025-12-02, 48d
+    Design                                  :done,  2026-01-19, 91d
+    Building                                :2026-04-20,25d
+
+    section Meetings
+    Intro Meeting                           :done, firstmeeting, 2026-01-19, 1d
+    Proposal Meeting                        :done, secondmeeting, 2026-02-01, 1d
+    
+    section Design
+    Weekly Meeting                          :done, weeklymeeting1, 2026-02-10, 1d
+    Weekly Meeting                          :done, weeklymeeting2, 2026-02-17, 1d
+    Agile Sprint Meeting                    :done, weeklymeeting2, 2026-02-17, 1d
+    Spec Creation Meeting                   :done, Specmetting, 2026-02-18, 1d
+    Weekly Meeting                          :done, weeklymeeting3, 2026-02-24, 1d
+    Weekly Meeting                          :done, weeklymeeting4, 2026-03-03, 1d
+    Assignment due date                     :milestone, crit, 2026-05-15, 1d
+```
+```
+```
+
+  <figcaption>The initial Gantt chart, agreed on by all group members</figcaption>
+</figure>
