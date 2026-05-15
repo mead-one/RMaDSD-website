@@ -502,6 +502,11 @@ section#skills h2 {
     overflow-x: auto;
 }
 
+figure {
+  width: 100%;
+  text-align: center;
+}
+
 /* Post navigation */
 .post-nav {
   width: 100%;
