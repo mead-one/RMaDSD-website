@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $pages := .Pages.ByDate.Reverse }}
+{{ $pages := .Pages.ByDate }}
 {{ $filteredPages := slice }}
 {{ range $pages }}
     {{ if and .IsPage (not .Params.hidden) }}
