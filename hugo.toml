@@ -3,3 +3,5 @@ languageCode = "en-gb"
 title = "Robotic Modelling &amp; Drone Skin Design"
 # theme = ""
 
+[markup.goldmark.renderer]
+unsafe = true
