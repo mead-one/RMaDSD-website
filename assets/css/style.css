@@ -507,6 +507,20 @@ figure {
   text-align: center;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc; /* Adjust color and width as needed */
+  padding: 0.6rem;
+}
+
+th {
+  background-color: #f9f9f9;
+}   
+
 /* Post navigation */
 .post-nav {
   width: 100%;
