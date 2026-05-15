@@ -40,6 +40,10 @@ sanitiser. In the following weeks, the group attended a series of workshops, in
 which the aforementioned technologies were demonstrated, explored and
 experimented with.
 
+The product would be deployed to bathrooms in theme parks and other attractions
+such as Madame Tussauds, where artistic and/or horror-themed attractions are a
+common sight.
+
 <figure>
 
 ```mermaid

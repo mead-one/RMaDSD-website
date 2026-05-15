@@ -1,10 +1,10 @@
 ---
-title: "Bibliography"
-brief: "Compiled references and sources"
-description: "Compiled references and sources used throughout this portfolio."
+title: "Evaluation"
+brief: "Evaluation of the project"
+description: "Evaluating the project and its achievements against the specifications."
 layout: "post"
-id: "bibliography"
+id: "evaluation"
 images: [ ]
-date: 2026-05-15
-tags: [ "academic", "references" ]
+date: 2026-05-14
+tags: [ "group work" ]
 ---
